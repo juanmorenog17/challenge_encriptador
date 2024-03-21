@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encriptador</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="container">
+  <br>
+  <h1><i>Encriptador</i></h1>
+
+
+  <div class="row g-2">
+
+
+    <div class="col-md">
+      <div class="form-floating">
+        <textarea class="form-control" style="height: 300px; resize: none;" placeholder="Leave a comment here"
+          id="mensaje"></textarea>
+        <label for="floatingTextarea2">Ingrese texto aquí</label>
+      </div>
+
+      <label for="">Solo letras minusculas y sin acentos</label>
+      <div style="text-align: center;"><br>
+        <button onclick="encriptar();" type="button" class="btn btn-outline-primary"
+          style="padding: 1rem 2rem 1rem 2rem;">Encriptar</button>
+        <button onclick="desencriptar();" type="button" class="btn btn-outline-dark"
+          style="padding: 1rem 2rem 1rem 2rem;">Desencriptar</button>
+      </div>
+
+    </div>
+
+
+
+    <div class="col-md">
+
+      <center>
+
+
+        <img src="img/vacio.png" id="imagen" style="width: 300px; height: 300px;">
+
+        <div id="mensaje-encriptado" id="mensaje-encriptado">
+          <h3 id="titulo-mensaje">Ningún mensaje encontrado</h3>
+          <h6 id="parrafo">Ingresa el texto que deseas encriptar</h6>
+        </div>
+
+
+      </center>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous">
+  </script>
+  <!-- SCRIPT PARA ANIMAR SWAL -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
